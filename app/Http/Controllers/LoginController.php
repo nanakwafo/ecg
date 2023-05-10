@@ -16,8 +16,8 @@ class LoginController extends Controller
     public function postlogin(Request $request)
     {
         Sentinel::authenticate($request->all());
-//        return redirect('/welcome');
-        return Sentinel::check();
+        return redirect('/welcome');
+//        return Sentinel::check();
 //        dd($request->all());
     }
 
